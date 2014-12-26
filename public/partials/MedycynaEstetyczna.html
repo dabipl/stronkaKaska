@@ -1,0 +1,248 @@
+<div class="container" ng-controller="MedEstController as MEC">		
+    <div class="list-group">
+      <div class="list-group-item">
+        <h1>Medycyna estetyczna</h1>
+        <div class="img-wrap">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="http://placehold.it/250x253" class="pull-left"/>
+            </div>
+            <div class="col-md-9" ng-controller="TabController as tab">
+              <!--<p class="center-block lead">{{treatment.description | limitTo:treatment.description.length - 20}}</p>-->
+              <ul class="nav nav-pills"><!--pull-left-->
+                <li ng-class="{ active:tab.isSet(1) }">
+                  <a href ng-click="tab.setTab(1)">Opis</a>
+                </li>
+                <li ng-class="{ active:tab.isSet(2) }">
+                  <a href ng-click="tab.setTab(2)">Skin Solution</a>
+                </li>
+                <li ng-class="{ active:tab.isSet(3) }">
+                  <a href ng-click="tab.setTab(3)">HEBE</a>
+                </li>
+                <li ng-class="{ active:tab.isSet(4) }">
+                  <a href ng-click="tab.setTab(4)">E-LIGHT</a>
+                </li>
+              </ul>
+              <!--  Description Tab's Content  -->
+              <div ng-show="tab.isSet(1)">
+                <hr/>
+                <blockquote>
+                  Medycyna estetyczna zajmuje się korektą szeroko pojętych defektów estetycznych o rozmaitym podłożu takich jak: blizny, rozstępy, otyłość cellulit, starzenie skóry. Zabiegi te są wyłącznie pozachirurgiczne, więc nie wymagają pobytu w szpitalu i są wykonywane ambulatoryjnie
+                  </br>
+                  Dlatego dbając o bezpieczeństwo jak i komfort naszych klientów w naszym gabinecie pracujemy na polskich oraz niemieckich urządzeniach, które są cenione na całym świecie.
+                </blockquote>
+              </div>
+
+              <!--  Spec Tab's Content  -->
+              <div ng-show="tab.isSet(2)">
+                <hr/>
+                <blockquote>
+                  Skin Solution to światowa nowość na rynku medycyny estetycznej. Jest to rewolucyjne urządzenie w redukcji zmarszczek mimicznych, polepszeniu elastyczności skóry oraz poprawie owalu twarzy. Każda końcówka z igłami przeznaczona do zabiegu jest sterylnie zapakowana i przeznaczona tylko dla jednego klienta, dzięki temu rozwiązaniu klient nie musi martwić się o ryzyko przeniesienia flory bakteryjnej. Efekty zabiegów są zdumiewające i porównywalne do liftingu bez skalpela.
+                </blockquote>
+              </div>
+
+              <!--  Spec Tab's Content  -->
+              <div ng-show="tab.isSet(3)">
+                <hr/>
+                <blockquote>
+                  Kolejnym urządzeniem w naszym gabinecie jest profesjonalny sprzęt marki HEBE. Jest efektem długoletniego doświadczenia i praktyki, odpowiedzią na potrzeby najbardziej wymagających klientów. HEBE jest cenioną marką nie tylko w Polsce lecz i za granicą. Urządzenie posiada wymagane badania oraz certyfikaty w tym NOT potwierdzające innowacyjność.
+                </blockquote>
+              </div>
+
+              <!--  Review Tab's Content  -->
+              <div ng-show="tab.isSet(4)">
+                <hr/>
+                <blockquote>
+                  Posiadamy również laser medyczny E-LIGHT (IPL + RF BI POLAR). Jest to nowoczesne, zaawansowane technologicznie urządzenie wykorzystujące energię świetlną w zabiegach kosmetycznych i medycznych. Efektem współdziałania IPL i fal radiowych jest głębsza penetracja w warstwy skóry właściwej. Praca e-lightem to szybszy efekt końcowy, co przekłada się na mniejszą ilość zabiegów, dużą rozpiętość możliwych zastosowań i satysfakcję klientów.W urządzeniu E-Light zminimalizowano odczucia bólowe pacjenta, co jest niezwykle istotne, ponieważ osoby bardzo wrażliwe na ból często rezygnują z zabiegu w obawie przed nieprzyjemnymi odczuciami. POSIADA UNIJNY CERTYFIKAT URZĄDZENIA MEDYCZNEGO CE CO WYRÓŻNIA NAS WŚRÓD KONKURENCJI.
+                </blockquote>
+              </div>
+              <!-- tutaj -->
+              <ul class="nav nav-pills listWith181Wbttn"><!--pull-left-->
+                <li>
+                  <button class="btn btn-primary btn-xs">Mezoterapia Mikroigłowa </button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Mezoterapia Bezigłowa </button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Lifting falami RF</button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Fotoodmładzanie</button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Mikrodermabrazja diamentowa</button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Laserowe leczenie trądziku</button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Redukcja rozstępów</button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Liposukcja ultradźwiękowa</button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Dermomasager</button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Usuwanie przebarwień</button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Zamykanie naczynek</button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Lifting falami RF</button>
+                </li>
+              </ul>
+
+            </div>
+      </div>
+      <br/>
+    </div>
+    <div class="list-group">
+      <!--  Product Container  -->
+      <div class="list-group-item" ng-repeat="treatment in MEC.treatments">
+        <h3>{{treatment.name}} <em class="pull-right"><small>{{treatment.treatTimeHour}} godziny</small></em></h3>
+        <!-- Image Gallery
+        <div ng-controller="GalleryController as gallery"  ng-show="treatment.images.length">
+            <div class="img-wrap">
+              <img ng-src="{{treatment.images[gallery.current]}}" class="img-circle"/>
+            </div>
+            <ul class="img-thumbnails clearfix">
+              <li class="small-image pull-left thumbnail" ng-repeat="image in treatment.images">
+                <img class="img-circle" ng-src="{{image}}" />
+              </li>
+            </ul>
+        </div>
+        -->
+      <div ng-controller="GalleryController as gallery"  ng-show="treatment.images.length">
+          <div class="img-wrap">
+            <div class="row">
+              <div class="col-md-3">
+                <img ng-src="{{treatment.images[gallery.current]}}" class="pull-left"/>
+              </div>
+              <div class="col-md-9" ng-controller="TabController as tab">
+                <!--<p class="center-block lead">{{treatment.description | limitTo:treatment.description.length - 20}}</p>-->
+                <ul class="nav nav-pills"><!--pull-left-->
+                  <li ng-class="{ active:tab.isSet(1) }" ng-show="treatment.description">
+                    <a href ng-click="tab.setTab(1)">Opis</a>
+                  </li>
+                  <li ng-class="{ active:tab.isSet(2) }" ng-show="treatment.effects.length">
+                    <a href ng-click="tab.setTab(2)">Efekty</a>
+                  </li>
+                  <li ng-class="{ active:tab.isSet(3) }" ng-show="treatment.injuctions.length">
+                    <a href ng-click="tab.setTab(3)">Wskazania</a>
+                  </li>
+                  <li ng-class="{ active:tab.isSet(4) }" ng-show="treatment.contraindications.length">
+                    <a href ng-click="tab.setTab(4)">Przeciwskazania</a>
+                  </li>
+                  <li ng-class="{ active:tab.isSet(5) }" ng-show="treatment.types.length">
+                    <a href ng-click="tab.setTab(5)">Rodzaje zastosowania</a>
+                  </li>
+                  <li ng-class="{ active:tab.isSet(6) }" ng-show="treatment.treatRepeatTimes">
+                    <a href ng-click="tab.setTab(6)">Liczba zabiegów</a>
+                  </li>
+                  <li ng-class="{ active:tab.isSet(7) }" ng-show="treatment.beforTreatments.length">
+                    <a href ng-click="tab.setTab(7)">Przed zabiegiem</a>
+                  </li>
+                  <li ng-class="{ active:tab.isSet(8) }" ng-show="treatment.afterTreatments.length">
+                    <a href ng-click="tab.setTab(8)">Po zabiegu</a>
+                  </li>
+                </ul>
+                <!--  Description Tab's Content  -->
+                <div ng-show="tab.isSet(1)">
+                  <h4>Description</h4>
+                  <blockquote>{{treatment.description}}</blockquote>
+                </div>
+
+                <!--  Spec Tab's Content  -->
+                <div ng-show="tab.isSet(2)">
+                  <ul>
+                    <h4>Efekty</h4>
+                    <li ng-repeat="efect in treatment.effects">
+                      <blockquote>
+                        <strong>{{efect}}</strong>
+                      </blockquote>
+                    </li>
+                  </ul>
+                </div>
+
+                <!--  Spec Tab's Content  -->
+                <div ng-show="tab.isSet(3)">
+                  <ul>
+                    <h4>Wskazania</h4>
+                    <li ng-repeat="injuction in treatment.injuctions">
+                      <blockquote>
+                        <strong>{{injuction}}</strong>
+                      </blockquote>
+                    </li>
+                  </ul>
+                </div>
+
+                <!--  Review Tab's Content  -->
+                <div ng-show="tab.isSet(4)">
+                  <ul>
+                    <h4>Przeciwskazania</h4>
+                    <li ng-repeat="contraindication in treatment.contraindications">
+                      <blockquote>
+                        <strong>{{contraindication}}</strong>
+                      </blockquote>
+                    </li>
+                  </ul>
+                </div>
+
+                <div ng-show="tab.isSet(5)">
+                  <ul>
+                    <h4>Przeciwskazania</h4>
+                    <li ng-repeat="type in treatment.types">
+                      <blockquote>
+                        <strong>{{type.name}}</strong>
+                      </blockquote>
+                      <ol>
+                        <li ng-repeat="step in type.steps">
+                          <b>{{step.name}}</b> - {{step.step}}
+                        </li>
+                      </ol>
+                    </li>
+                  </ul>
+                </div>
+
+                <div ng-show="tab.isSet(6)">
+                      <blockquote>
+                        <strong>{{treatment.treatRepeatTimes}}</strong>
+                      </blockquote>
+                </div>
+
+                <div ng-show="tab.isSet(7)">
+                  <ul>
+                    <h4>Przed zabiegiem</h4>
+                    <li ng-repeat="beforTreatment in treatment.beforTreatments">
+                      <blockquote>
+                        <strong>{{beforTreatment}}</strong>
+                      </blockquote>
+                    </li>
+                  </ul>
+                </div>
+
+                <div ng-show="tab.isSet(8)">
+                  <ul>
+                    <h4>Po zabiegu</h4>
+                    <li ng-repeat="afterTreatment in treatment.afterTreatments">
+                      <blockquote>
+                        <strong>{{afterTreatment}}</strong>
+                      </blockquote>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      </div>
+    </div>
+      <!-- Three columns of text below the carousel -->
+
+      <!-- /END THE FEATURETTES -->
+</div>

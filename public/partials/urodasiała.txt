@@ -1,0 +1,178 @@
+var treatmentsCollection = [
+    {
+      name: 'Manicure',
+      treatRepeatTimes: "",
+      treatTimeHour: 2,
+      description: "Piękne dłonie i paznokcie to nie  przypadek, są wizytówką każdej kobiety i  jednym z najbardziej widocznych atrybutów urody. Wygląd dłoni jest jak  otwarta księga, która dostarcza informacji o naszym temperamencie, osobowości i stylu życia. Skóra rąk charakteryzuje się szczególną delikatnością,    ponieważ nie posiada tkanki tłuszczowej, dlatego też    mając codzienny kontakt z czynnikami zewnętrznymi    podlega nadmiernemu wysuszeniu i czyni ręce szorstkimi. Często starzeje się w bardziej widoczny sposób niż twarz i ciało. Kobiety marzą o pięknych dłoniach, długich i zdrowych paznokciach, które są zwierciadłem stanu zdrowia organizmu, lecz ich wygląd jest często uwarunkowany genetycznie. Możemy poprawiać ich kondycję zdrową dietą, preparatami - witaminami jak również przeróżnymi zabiegami pielęgnacyjnymi, jednak nic nie zastąpi prawidłowo wykonanego manicure, który nada naszym dłoniom elegancji i smukłości.",
+      effects: [],
+      injuctions: [],
+      contraindications: [],
+      types:[],
+      afterTreatments:[],
+      beforTreatments:[],
+      images: [
+        "http://placehold.it/250x253",
+        "http://placehold.it/150x154",
+        "http://placehold.it/150x155"
+      ]
+    },
+	{
+      name: 'Satynowe rękawiczki',
+      treatRepeatTimes: "",
+      treatTimeHour: 2,
+      description: "Satynowe rękawiczki - zabieg na ręce wygładzająco-regenrujący Zabieg przeznaczony do specjalistycznej regeneracji skóry dłoni do wykonywania w trakcie kosmetyki twarzy w gabinetach odnowy biologicznej, a także jako element luksusowego manicure.Aktywne substancje wykorzystane w tym zabiegu hamują procesy starzenia się skóry, poprawiają krążenie oraz intensywnie ją odżywiają i nawilżają. Wyjątkowa maska wykorzystuje wszystkie odżywcze zmiękczające właściwości kwiatu lotosu, miodu akacjowego, masła karite, oleju z pestek winogron oraz wodne roztwory malwy by nadać rękom wspaniały wygląd a słodki peeling usunie wszelkie martwe komórki skóry. Pamiętajmy, że skóra na rękach narażona jest na najszybsze starzenie się. Jego objawy są bardzo widoczne i nie ma sposobu, by je zamaskować. Mówi się, że na dłoniach wypisana jest metryka i jest to prawdziwa wizytówka kobiety. Dlatego pielęgnacja skóry dłoni powinna, dla dobra naszych klientów, zawsze towarzyszyć zabiegom kosmetycznym, w jego prostej wersji – nawet gratisowo. Polecamy wykonywanie tego zabiegu podczas innych zabiegów pielęgnacyjnych lub jako osobny zabieg dla poprawienia kondycji skóry rąk i paznokci.",
+      effects: [
+        "Skóra dłoni wygląda na zadbaną i młodszą",
+        "Skóra dłoni jest wygładzona i miękka",
+		"Skóra dłoni jest jędrniejsza i odżywiona",
+		"Skóra dłoni jest rozjaśniona"
+      ],
+      injuctions: [],
+      contraindications: [],
+      types:[],
+      afterTreatments:[],
+      beforTreatments:[],
+      images: [
+        "http://placehold.it/250x253",
+        "http://placehold.it/150x154",
+        "http://placehold.it/150x155"
+      ]
+    },
+	{
+      name: 'Pedicure',
+      treatRepeatTimes: "",
+      treatTimeHour: 2,
+      description: "Jedwabne buciki – zabieg na stopy wygładzająco- regenerujący- nawilżający Zabieg na stopy jest kilkuetapowym seansem pielęgnacyjnym, znacznie poprawiającym stan nóg, do wykonywania w trakcie kosmetyki twarzy w gabinetach, a także jako element luksusowego pedicure. Po zabiegu skóra staje się miękka i aksamitnie gładka. Ponadto poprawia się stan paznokci, a wszelkie uporczywe przebarwienia zostają skutecznie rozjaśnione. Zabieg rozpoczyna się oczyszczającym peelingiem zawierającym drobną sól, który wysubtelnia wygląd skóry,złuszcza martwe warstwy naskórka oraz tonizuje naskórek. Następnie wykonywany jest masaż na stymulujący punkty witalne na obszarze stóp. Pobudzane zostają strefy, odpowiadające konkretnym organom wewnętrznym, przywracając równowagę całego organizmu. Ponadto poprzez stymulację odpowiednich punktów, następuje pobudzenie krążenia krwi, wzmocnienie układu odpornościowego, oraz rozluźnienie mięśni i zniwelowanie wszelkich bólów. Następnie zostaje nałożona maska na stopy i paznokcie, która w swoim składzie zawiera olej z oliwek, masło karite i liscie baobabu: koktajl ultra odżywczych substancji czynnych, który dostarcza skórze stóp to wszystko czego potrzebuje w celu jej natychmiastowego upiększenia. Dlatego pielęgnacja skóry stóp powinna, dla dobra naszych klientów, zawsze towarzyszyć zabiegom kosmetycznym, w jego prostej wersji – nawet gratisowo. Polecamy wykonywanie tego zabiegu podczas innych zabiegów pielęgnacyjnych lub jako osobny zabieg dla poprawienia kondycji skóry stóp i paznokci.",
+      effects: [
+        "Skóra stóp wygląda na zadbaną i młodszą",
+        "Skóra stóp jest wygładzona i miękka",
+		"Skóra stóp jest jędrniejsza i odżywiona",
+		"Skóra stóp jest rozjaśniona"
+      ],
+      injuctions: [],
+      contraindications: [],
+      types:[],
+      afterTreatments:[],
+      beforTreatments:[],
+      images: [
+        "http://placehold.it/250x253",
+        "http://placehold.it/150x154",
+        "http://placehold.it/150x155"
+      ]
+    },
+	{
+      name: 'Masaż',
+      treatRepeatTimes: "",
+      treatTimeHour: 2,
+      description: " Masaż ciała jest stosowaną od kilku tysięcy lat formą terapii, a nawet metodą leczenia organizmu. Polega na oddziaływaniu bodźcami mechanicznymi na tkanki ustroju w celu wywołania w nich pozytywnych reakcji. Usuwa zmęczenie oraz pomaga w utrzymaniu zdrowia i urody. Stosowany regularnie, najlepiej co 2 tygodnie, jest prawdziwym dobrodziejstwem dla każdego niezależnie od wieku. W zależności od techniki, formy, intensywności i siły masażu możemy zwiększać lub zmniejszać tonus tkanek. Przy masażu całkowitym ciało relaksuje się, poprawia się ukrwienie skóry oraz tkankowa przemiana materii. Zmniejsza się także nadmierne napięcie mięśni spowodowane przewlekłym stresem. Dotyczy to szczególnie mięśni karku i obręczy barkowej. Regularne masaże powodują znaczne zmniejszenie cellulitu, stymulują mikrokrążenie w tkankach oraz usuwają toksyny z organizmu, co ma szczególne znaczenie podczas odchudzania się. Przeciwdziałają starzeniu się i wiotczeniu skóry oraz ujędrniają mięśnie. Wykonujemy masaż klasyczny, odmładzająco-relaksacyjny Infrared, relaksujacy, limfatyczny podciśnieniowy, dłoni oraz stóp.",
+      effects: [
+        "Wzmożenie krążenia krwi i limfy",
+        "Przyspieszenie przemiany materii"
+      ],
+      injuctions: [
+        "Przy zmęczeniu i napiętych mięśniach",
+        "Gdy masz zbyt mało ruchu",
+        "Jeśli żyjesz w stresie i pośpiechu",
+        "Chcesz wyrzeźbić i uelastycznić ciało",
+        "Wspomagająco podczas odchudzania",
+        "Profilaktycznie, żeby opóźnić procesy starzenia",
+		"Aby zrelaksować ciało i duszę"
+      ],
+      contraindications: [],
+      types:[],
+      afterTreatments:[],
+      beforTreatments:[],
+      images: [
+        "http://placehold.it/250x253",
+        "http://placehold.it/150x154",
+        "http://placehold.it/150x155"
+      ]
+    },
+	{
+      name: 'Masaż bańką chińską',
+      treatRepeatTimes: "",
+      treatTimeHour: 2,
+      description: "Podciśnienie, które wytwarza się w bańce przez usunięcie z niej powietrza, powoduje zassanie skóry i tkanek leżących pod bańką, wpływając na intensywne ich przekrwienie oraz wyraźną poprawę stanu mało elastycznej skóry. Bańka chińska pobudza krążenie krwi i płynów ustrojowych, pomaga pozbyć się zbędnych produktów przemiany materii oraz toksyn z organizmu. W wyniku przyspieszenia przemiany materii następuje redukcja tkanki tłuszczowej. Ma nieocenioną moc w zastosowaniu w kuracji antycellulitowej lub jako drenaż limfatyczny. Poza wyżej wymienionymi właściwościami masaż bańką doskonale relaksuje i uspokaja. Jest dobry dla osób zestresowanych, przemęczonych, prowadzących siedzący tryb życia oraz po wyczerpującym wysiłku fizycznym.",
+      effects: [],
+      injuctions: [
+        "Nowotwory",
+        "Gruźlica",
+        "Podwyższona temperatura ciała",
+        "Menstruacja",
+        "Ciąża",
+        "Zaburzenia krzepliwości krwi",
+		"Żylaki"
+      ],
+      contraindications: [
+        "Cellulit",
+        "Obrzęki limfatyczne",
+        "Napięte i obolałe mięśnie"        
+      ],
+      types:[],
+      afterTreatments:[],
+      beforTreatments:[],
+      images: [
+        "http://placehold.it/250x253",
+        "http://placehold.it/150x154",
+        "http://placehold.it/150x155"
+      ]
+    },
+	{
+      name: 'Mezoterapia Mikroigłowa',
+      treatRepeatTimes: "",
+      treatTimeHour: 2,
+      description: "Zdrowe, wypielęgnowane stopy są ważnym elementem urody oraz podstawą dobrego samopoczucia. Delikatna, gładka skóra oraz kształtne paznokcie dodają powabu i lekkości. Dlatego warto otoczyć stopy szczególną troską i wykonać profesjonalny pedicure, który jest nie tylko zabiegiem upiększającym, ale również leczniczym. Podstawową częścią pedicure jest usunięcie zrogowaciałego naskórka ze spodu stóp, likwidacja odcisków, modzeli oraz prawidłowe ukształtowanie paznokcia.",
+      effects: [],
+      injuctions: [],
+      contraindications: [],
+      types:[],
+      afterTreatments:[],
+      beforTreatments:[],
+      images: [
+        "http://placehold.it/250x253",
+        "http://placehold.it/150x154",
+        "http://placehold.it/150x155"
+      ]
+    },
+	{
+      name: 'Depilacja woskiem',
+      treatRepeatTimes: "",
+      treatTimeHour: 2,
+      description: "Nie ulega wątpliwości, że usuwanie zbędnego owłosienia - depilacja - stało się powszechnie stosowanym zabiegiem pielęgnacyjnym, a zabieg depilacji traktowany jest dzisiaj przez kobiety, i coraz częściej przez mężczyzn, jako obowiązek. Polega na nakładaniu na skórę ciepłego półpłynnego lub płynnego wosku, który odrywa się szybkim ruchem w stronę przeciwną do kierunku wzrostu włosów. Warunkiem skuteczności tej metody jest odpowiednia długość włosów - powinny mieć minimum 0,5 mm długości. Ten rodzaj depilacji pozwala na wyrwanie włosa wraz z cebulką, po zabiegu włosy odrastają wolniej i są słabsze. Nie należy przez 1-2 dni poddawać wydepilowaną część ciała na słońce czy solarium. Efekt utrzymuje się od 3 do 6 tygodni",
+      effects: [],
+      injuctions: [],
+      contraindications: [],
+      types:[],
+      afterTreatments:[],
+      beforTreatments:[],
+      images: [
+        "http://placehold.it/250x253",
+        "http://placehold.it/150x154",
+        "http://placehold.it/150x155"
+      ]
+    },
+	{
+      name: 'Depilacja woskiem',
+      treatRepeatTimes: "Seria zabiegów 5-15",
+      treatTimeHour: 2,
+      description: " A może by tak schudnąć leżąc nic nie robiąc ? Sauna Koc Infrared Ciepło promieniowania podczerwonego wnika głęboko w ciało i dzięki zwiększonemu przepływowi krwi rozprzestrzenia się szybko na cały organizm. Temperatura ciała podnosi się do 70 stopni, czego następstwem jest naturalny odruch - pocenie się - i to już przy stosunkowo niskiej temperaturze. Regularna terapia wygrzewania i pocenia się w tej saunie przynosi korzyści dla zdrowia. Podczas zabiegu w saunie IR zwiększa się krążenie krwi, serce bije intensywniej, krew płynie szybciej, nie podnosząc jednak ciśnienia tętniczego. Tlen jest lepiej doprowadzany do komórek ciała. To powoduje odprężenie, redukuje bóle mięśniowe i przyspiesza procesy leczenia. Terapia podczerwienią wzmacnia system immunologiczny i skutecznie wspomaga walkę z przeziębieniami i zakażeniami grzybopodobnymi w początkowych ich stadiach. Pocenie w trakcie sesji działa na organizm oczyszczająco. Powoduje pozbywanie się niepotrzebnych związków sodu, alkoholu, nikotyny, obniża stężenie cholesterolu oraz przyczynia się do pozbycia nadmiaru wody. Eliminuje również metale rakotwórcze, takie jak kadm, ołów  czy cynk. Dzięki polepszaniu procesów metabolicznych terapia pomaga w odchudzaniu. SUCHA KOC INFRARED WSPOMAGA ODCHUDZANIE, PRZYSPIESZA PRZEMIANĘ MATERII I SPALANIE KALORII. Seans w podczerwieni bez obciążania stawów i intensywnych ćwiczeń przyspiesza przemianę materii o około 40%. W ciągu 30 minut spalić można od 900 do 2400 kilokalorii. Zabieg zastępuje intensywny 10-kilometrowy bieg. Promienie podczerwone eliminują nadmiar soli i tłuszczu podskórnego, ogrzewają ciało do 4 cm w głąb, powodując intensywne pocenie się. Reakcja fali podczerwonej na organizm sprawia, że nie tylko wydalana jest woda /ok. 70% utraty masy ciała/, ale także tłuszcz /15-20%/, cholesterol, metale ciężkie, kwasy i związki toksyczne /10-15%/. KOC ODCHUDZA BEZ WYSIŁKU. Likwiduje nadwyżki tkanki tłuszczowej, redukuje cellulit, przywraca skórze młodzieńczą jędrność. Do zaiegu można dokupić ampułkę wyszczuplająco-antycellulitową bądź skorzystać z body wrapping na jedną partię ciała",
+      effects: [
+		"Wzmacnia system odpornościowy",
+		"Przynosi ulge w bólu ",
+		"Oczyszcza skórę z toksyn i obumarłego naskórka",
+		"Poprawia kondycję układu sercowo-naczyniowego",
+		"Redukuje napięcia stresowe poprawiając samopoczucie"	 
+	  ],
+      injuctions: [],
+      contraindications: [],
+      types:[],
+      afterTreatments:[],
+      beforTreatments:[],
+      images: [
+        "http://placehold.it/250x253",
+        "http://placehold.it/150x154",
+        "http://placehold.it/150x155"
+      ]
+    }
+	]
+    

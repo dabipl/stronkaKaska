@@ -1,0 +1,97 @@
+{
+"treatments":[ 
+ {
+  "name": "Mezoterapia Mikroigłowa",
+  "treatRepeatTimes": "",
+  "treatTimeHour": 2,
+  "description": "Lifting bez skalpela. Jest to połączenie technologii medycznej i kosmetycznej dla tego możemy zaproponowań Państwu innowacyjny zabieg pozwalający na niezwykle skuteczną walkę z efektami starzenia się skóry. Mezoterapia mikroigłowa Power Lift to nie tylko zwykła pielęgnacja, lecz dogłębne poprawienie jakości skóry. Zaletą tych rozwiązań jest natychmiastowa efektywność idąca w parze z brakiem przeciwwskazań oraz bardzo szybkim powrotem pacjenta po zabiegu do aktywnego życia. Zabieg jest bezbolesny, nie wymaga znieczulenia miejscowego naskórka. Można się pokusić o stwierdzenie, iż efekty systematycznego korzystania z zabiegów są porównywalne do „ liftingu”, ale bez operacji.",
+  "effects": [
+    "Redukcja zmarszczek mimicznych i statycznych",
+    "Poprawa owalu twarzy",
+    "Polepszenie jędrności i elastyczności skóry",
+    "Stymulacja produkcji kolagenu i elastyny",
+    "Poprawa kolorytu skóry",
+    "Regeneracja skóry własnym podziałem komórkowym",
+    "Intensywna, ale ściśle kontrolowana stymulacja naskórka",
+    "Natychmiastowy i optymalny transport składników aktywnych",
+    "Reaktywacja wszystkich funkcji skóry"
+],
+  "injuctions": [
+    "Trądzik",
+    "Zmarszczki mimiczne i statyczne",
+    "Skóra gruba, pokryta bliznami",
+    "Słaba tkanka łączna",
+    "Skóra zniszczona nadmiernym opalaniem",
+    "Skóra cienka, mało elastyczna"
+  ],
+  "contraindications": [
+    "brodawki",
+    "występowanie opryszczki",
+    "aktywny zapalny trądzik",
+    "ciąża"
+  ],
+  "types":[
+    {
+      "name":"Zabieg podstawowy",
+      "steps":[
+        {
+          "name":"Demakijaż",
+          "step":"twarzy, szyi i dekoltu"
+          },
+        {
+          "name":"Power Peel",
+          "step":"rozpuszczenie zewnętrznej partii naskórka 10% stężeniem kwasów"
+          },
+        {
+          "name":"Stymulacja mikroigłami",
+          "step":"660 tys. Kanalików w 10 minutowym cyklu pracy"
+          },
+        {
+          "name":"Power Hialuron",
+          "step":"manualne wprowadzenie hialuronu natychmiastowo absorbowanego w głębokie warstwy skóry, który dostarcza i wiąże wilgoć w skórze, dzięki funkcjom wypełniającym spłyca linię zmarszczek i napina skórę"
+          }
+      ]
+    },
+    {
+      "name":"Zabieg Lux intensywny",
+      "steps":[
+        {
+          "name":"Demakijaż",
+          "step":"twarzy, szyi i dekoltu"
+          },
+        {
+          "name":"Power Peel",
+          "step":"rozpuszczenie zewnętrznej partii naskórka 10% stężeniem kwasów"
+          },
+        {
+          "name":"Stymulacja mikroigłami",
+          "step":"660 tys. Kanalików w 10 minutowym cyklu pracy"
+          },
+        {
+          "name":"Power Hialuron",
+          "step":"manualne wprowadzenie hialuronu natychmiastowo absorbowanego w głębokie warstwy skóry, który dostarcza i wiąże wilgoć w skórze, dzięki funkcjom wypełniającym spłyca linię zmarszczek i napina skórę"
+          },
+        {
+          "name":"Power lift",
+          "step":"nakłucie linowe zmarszczek i wypełnienie Argireliną, który wypłyca linię zmarszczek"
+          },
+        {
+          "name":"Power lift",
+          "step":"nakłucie linowe zmarszczek i wypełnienie Argireliną, który wypłyca linię zmarszczek"
+          }
+      ]
+    }
+  ],
+  "afterTreatments":[
+  "maska hydrożelowa- na bazie hialuronu i wyciągu z alg z kompleksem odbudowy tkanki",
+  "maska stretch – na bazie witamin i minerałów z wyciągiem hialuronu"
+  ],
+  "beforTreatments":[],
+  "images": [
+    "http://placehold.it/250x253",
+    "http://placehold.it/150x154",
+    "http://placehold.it/150x155"
+  ]
+}
+]
+}

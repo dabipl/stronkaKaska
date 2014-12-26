@@ -1,0 +1,220 @@
+<div class="container" ng-controller="MedEstController as MEC">		
+    <div class="list-group">
+      <div class="list-group-item">
+        <h1>Uroda Ciała</h1>
+        <div class="img-wrap">
+          <div class="row">
+            <div class="col-md-3">
+              <img src="http://placehold.it/250x253" class="pull-left"/>
+            </div>
+            <div class="col-md-9" ng-controller="TabController as tab">
+              <!--<p class="center-block lead">{{treatment.description | limitTo:treatment.description.length - 20}}</p>-->
+              <ul class="nav nav-pills"><!--pull-left-->
+                <li ng-class="{ active:tab.isSet(1) }">
+                  <a href ng-click="tab.setTab(1)">Opis</a>
+                </li>                
+              </ul>
+              <!--  Description Tab's Content  -->
+              <div ng-show="tab.isSet(1)">
+                <hr/>
+                <blockquote>
+                  Od bardzo dawna kobiety zawsze pragnęły być piękne i młode. Nie bez przyczyny  dzięki temu wzbudzają podziw oraz pożądanie wśród płci przeciwnej, są bardziej pewne siebie, co pozwala im odnieść większy sukces. Dlatego też, tak ważna jest pielęgnacja naszego ciała. W naszym gabinecie pragniemy pomóc kobietom poczuć się zawsze pięknie! Korzystając z naszych usług oraz rad będziesz mogła przez długi czas cieszyć się młodym wyglądem, cieszyć się niesamowicie gładką i jędrną skórą.                  
+                </blockquote>
+              </div>
+                           
+              <!-- tutaj -->
+              <ul class="nav nav-pills listWith181Wbttn"><!--pull-left-->
+                <li>
+                  <button class="btn btn-primary btn-xs">Manicure</button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Satynowe rękawiczki</button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Pedicure</button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Jedwabne buciki</button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Masaż</button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Masaż bańką chińską</button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Masaż peelingujący</button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Masaż gorącymi kamieniami</button>
+                </li>
+				<li>
+                  <button class="btn btn-primary btn-xs">Depilacja woskiem</button>
+                </li>
+				<li>
+                  <button class="btn btn-primary btn-xs">Koc sauna Infrared</button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Dermomasager</button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Usuwanie przebarwień</button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Zamykanie naczynek</button>
+                </li>
+                <li>
+                  <button class="btn btn-primary btn-xs">Lifting falami RF</button>
+                </li>
+              </ul>
+
+            </div>
+      </div>
+      <br/>
+    </div>
+    <div class="list-group">
+      <!--  Product Container  -->
+      <div class="list-group-item" ng-repeat="treatment in MEC.treatments">
+        <h3>{{treatment.name}} <em class="pull-right"><small>{{treatment.treatTimeHour}} godziny</small></em></h3>
+        <!-- Image Gallery
+        <div ng-controller="GalleryController as gallery"  ng-show="treatment.images.length">
+            <div class="img-wrap">
+              <img ng-src="{{treatment.images[gallery.current]}}" class="img-circle"/>
+            </div>
+            <ul class="img-thumbnails clearfix">
+              <li class="small-image pull-left thumbnail" ng-repeat="image in treatment.images">
+                <img class="img-circle" ng-src="{{image}}" />
+              </li>
+            </ul>
+        </div>
+        -->
+      <div ng-controller="GalleryController as gallery"  ng-show="treatment.images.length">
+          <div class="img-wrap">
+            <div class="row">
+              <div class="col-md-3">
+                <img ng-src="{{treatment.images[gallery.current]}}" class="pull-left"/>
+              </div>
+              <div class="col-md-9" ng-controller="TabController as tab">
+                <!--<p class="center-block lead">{{treatment.description | limitTo:treatment.description.length - 20}}</p>-->
+                <ul class="nav nav-pills"><!--pull-left-->
+                  <li ng-class="{ active:tab.isSet(1) }" ng-show="treatment.description">
+                    <a href ng-click="tab.setTab(1)">Opis</a>
+                  </li>
+                  <li ng-class="{ active:tab.isSet(2) }" ng-show="treatment.effects.length">
+                    <a href ng-click="tab.setTab(2)">Efekty</a>
+                  </li>
+                  <li ng-class="{ active:tab.isSet(3) }" ng-show="treatment.injuctions.length">
+                    <a href ng-click="tab.setTab(3)">Wskazania</a>
+                  </li>
+                  <li ng-class="{ active:tab.isSet(4) }" ng-show="treatment.contraindications.length">
+                    <a href ng-click="tab.setTab(4)">Przeciwskazania</a>
+                  </li>
+                  <li ng-class="{ active:tab.isSet(5) }" ng-show="treatment.types.length">
+                    <a href ng-click="tab.setTab(5)">Rodzaje zastosowania</a>
+                  </li>
+                  <li ng-class="{ active:tab.isSet(6) }" ng-show="treatment.treatRepeatTimes">
+                    <a href ng-click="tab.setTab(6)">Liczba zabiegów</a>
+                  </li>
+                  <li ng-class="{ active:tab.isSet(7) }" ng-show="treatment.beforTreatments.length">
+                    <a href ng-click="tab.setTab(7)">Przed zabiegiem</a>
+                  </li>
+                  <li ng-class="{ active:tab.isSet(8) }" ng-show="treatment.afterTreatments.length">
+                    <a href ng-click="tab.setTab(8)">Po zabiegu</a>
+                  </li>
+                </ul>
+                <!--  Description Tab's Content  -->
+                <div ng-show="tab.isSet(1)">
+                  <h4>Description</h4>
+                  <blockquote>{{treatment.description}}</blockquote>
+                </div>
+
+                <!--  Spec Tab's Content  -->
+                <div ng-show="tab.isSet(2)">
+                  <ul>
+                    <h4>Efekty</h4>
+                    <li ng-repeat="efect in treatment.effects">
+                      <blockquote>
+                        <strong>{{efect}}</strong>
+                      </blockquote>
+                    </li>
+                  </ul>
+                </div>
+
+                <!--  Spec Tab's Content  -->
+                <div ng-show="tab.isSet(3)">
+                  <ul>
+                    <h4>Wskazania</h4>
+                    <li ng-repeat="injuction in treatment.injuctions">
+                      <blockquote>
+                        <strong>{{injuction}}</strong>
+                      </blockquote>
+                    </li>
+                  </ul>
+                </div>
+
+                <!--  Review Tab's Content  -->
+                <div ng-show="tab.isSet(4)">
+                  <ul>
+                    <h4>Przeciwskazania</h4>
+                    <li ng-repeat="contraindication in treatment.contraindications">
+                      <blockquote>
+                        <strong>{{contraindication}}</strong>
+                      </blockquote>
+                    </li>
+                  </ul>
+                </div>
+
+                <div ng-show="tab.isSet(5)">
+                  <ul>
+                    <h4>Przeciwskazania</h4>
+                    <li ng-repeat="type in treatment.types">
+                      <blockquote>
+                        <strong>{{type.name}}</strong>
+                      </blockquote>
+                      <ol>
+                        <li ng-repeat="step in type.steps">
+                          <b>{{step.name}}</b> - {{step.step}}
+                        </li>
+                      </ol>
+                    </li>
+                  </ul>
+                </div>
+
+                <div ng-show="tab.isSet(6)">
+                      <blockquote>
+                        <strong>{{treatment.treatRepeatTimes}}</strong>
+                      </blockquote>
+                </div>
+
+                <div ng-show="tab.isSet(7)">
+                  <ul>
+                    <h4>Przed zabiegiem</h4>
+                    <li ng-repeat="beforTreatment in treatment.beforTreatments">
+                      <blockquote>
+                        <strong>{{beforTreatment}}</strong>
+                      </blockquote>
+                    </li>
+                  </ul>
+                </div>
+
+                <div ng-show="tab.isSet(8)">
+                  <ul>
+                    <h4>Po zabiegu</h4>
+                    <li ng-repeat="afterTreatment in treatment.afterTreatments">
+                      <blockquote>
+                        <strong>{{afterTreatment}}</strong>
+                      </blockquote>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      </div>
+    </div>
+      <!-- Three columns of text below the carousel -->
+
+      <!-- /END THE FEATURETTES -->
+</div>
